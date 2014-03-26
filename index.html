@@ -22,9 +22,31 @@
 
 	<style>
 		* { margin: 0; padding: 0; border: none; }
-		body { font-family: 'Open Sans Condensed', sans-serif; text-align: center; padding: 5% 5% 30px; font-smoothing: antialiased; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-		img { display: inline-block; max-width: 100%;}
-		p { max-width: 570px; margin: 0 auto 0; color: #7c8082; text-transform: uppercase; font-size: 22px; line-height: 28px; font-weight: 300;}
+		body {
+			font-family: 'Open Sans Condensed', sans-serif;
+			text-align: center;
+			padding: 5% 5% 30px;
+			font-smoothing: antialiased;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-animation: entrance 2000ms 0 both;
+		}
+
+		img {
+			display: inline-block;
+			max-width: 100%;
+		}
+
+		p {
+			max-width: 570px;
+			margin: 0 auto 0;
+			color: #7c8082;
+			text-transform: uppercase;
+			font-size: 22px;
+			line-height: 28px;
+			font-weight: 300;
+		}
+
 		.bookmarklet {
 			margin-bottom: 30px;
 			background: #9b1619;
@@ -35,8 +57,9 @@
 			line-height: 100%;
 			text-decoration: none;
 			position: relative;
-			-webkit-animation: tada 1000ms 500ms both;
+			-webkit-animation: tada 1000ms 1800ms both;
 		}
+
 		.bookmarklet:hover {
 			background: #fc0012;
 			color: #ffffff;
@@ -44,6 +67,13 @@
 			top: 1px;
 			padding-top: 9px;
 		}
+
+		@-webkit-keyframes entrance {
+			0% { opacity: 0; }
+			40% { opacity: 0; }
+			100% { opacity: 1; }
+		}
+
 		@-webkit-keyframes tada {
 		  0% {
 		    -webkit-transform: scale(1);
