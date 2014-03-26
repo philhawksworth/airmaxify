@@ -6,40 +6,6 @@
 	<link rel="icon" href="icon.png">
 	<title>Airmaxify</title>
 
-	<style>
-		* { margin: 0; padding: 0; border: none; }
-		body { font-family: 'Open Sans Condensed', sans-serif; text-align: center; padding: 5% 5% 30px; font-smoothing: antialiased; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-		img { display: inline-block; max-width: 100%;}
-		p { max-width: 575px; margin: 0 auto 0; color: #7c8082; text-transform: uppercase; font-size: 22px; line-height: 28px; font-weight: 300;}
-		.bookmarklet {
-			margin-bottom: 30px;
-			background: #9b1619;
-			color: #ffffff;
-			padding: 10px 20px;
-			border-radius: 2px;
-			display: inline-block;
-			line-height: 100%;
-			text-decoration: none;
-			position: relative;
-		}
-		.bookmarklet:hover {
-			background: #fc0012;
-			color: #ffffff;
-			border-top: 1px solid #cc0000;
-			top: 1px;
-			padding-top: 9px;
-		}
-	</style>
-</head>
-<body>
-
-	<img src="airmax.jpg" alt="Air Max">
-
-	<p><a href="javascript:(function(){ ktndata = null, fcb=function(d){ ktndata=d; var p=document.getElementsByTagName('img'); for(var i in p){ p[i].width=p[i].width; p[i].height=p[i].height; p[i].src=d.items[Math.floor(Math.random()*(d.items.length))].media.m; } }; if(!ktndata){ var jp=document.createElement('script'); jp.setAttribute('type','text/javascript'); jp.setAttribute('src','https://api.flickr.com/services/feeds/groups_pool.gne?id=2583730@N20&format=json&jsoncallback=fcb'); document.getElementsByTagName('head')[0].appendChild(jp); } else{ fcb(ktndata); } })()" class="bookmarklet">Airmaxify</a></p>
-
-	<p>To say happy birthday we've airmaxified the web for you. To enjoy the shoe-love, simply drag the Airmaxify button above to your bookmarks bar, visit any webpage (yup, any webpage), then hit the link in your bookmarks bar to Airmaxify everything.</p>
-
-
 	<script type="text/javascript">
 	  WebFontConfig = {
 	    google: { families: [ 'Open+Sans+Condensed:700:latin' ] }
@@ -53,5 +19,65 @@
 	    var s = document.getElementsByTagName('script')[0];
 	    s.parentNode.insertBefore(wf, s);
 	  })(); </script>
+
+	<style>
+		* { margin: 0; padding: 0; border: none; }
+		body { font-family: 'Open Sans Condensed', sans-serif; text-align: center; padding: 5% 5% 30px; font-smoothing: antialiased; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+		img { display: inline-block; max-width: 100%;}
+		p { max-width: 570px; margin: 0 auto 0; color: #7c8082; text-transform: uppercase; font-size: 22px; line-height: 28px; font-weight: 300;}
+		.bookmarklet {
+			margin-bottom: 30px;
+			background: #9b1619;
+			color: #ffffff;
+			padding: 10px 20px;
+			border-radius: 2px;
+			display: inline-block;
+			line-height: 100%;
+			text-decoration: none;
+			position: relative;
+			-webkit-animation: tada 1000ms 500ms both;
+		}
+		.bookmarklet:hover {
+			background: #fc0012;
+			color: #ffffff;
+			border-top: 1px solid #cc0000;
+			top: 1px;
+			padding-top: 9px;
+		}
+		@-webkit-keyframes tada {
+		  0% {
+		    -webkit-transform: scale(1);
+		    transform: scale(1);
+		  }
+
+		  10%, 20% {
+		    -webkit-transform: scale(0.9) rotate(-3deg);
+		    transform: scale(0.9) rotate(-3deg);
+		  }
+
+		  30%, 50%, 70%, 90% {
+		    -webkit-transform: scale(1.1) rotate(3deg);
+		    transform: scale(1.1) rotate(3deg);
+		  }
+
+		  40%, 60%, 80% {
+		    -webkit-transform: scale(1.1) rotate(-3deg);
+		    transform: scale(1.1) rotate(-3deg);
+		  }
+
+		  100% {
+		    -webkit-transform: scale(1) rotate(0);
+		    transform: scale(1) rotate(0);
+		  }
+		}
+	</style>
+</head>
+<body>
+
+	<img src="airmax.jpg" alt="Air Max">
+
+	<p><a href="javascript:(function(){ ktndata = null, fcb=function(d){ ktndata=d; var p=document.getElementsByTagName('img'); for(var i in p){ p[i].width=p[i].width; p[i].height=p[i].height; p[i].src=d.items[Math.floor(Math.random()*(d.items.length))].media.m; } }; if(!ktndata){ var jp=document.createElement('script'); jp.setAttribute('type','text/javascript'); jp.setAttribute('src','https://api.flickr.com/services/feeds/groups_pool.gne?id=2583730@N20&format=json&jsoncallback=fcb'); document.getElementsByTagName('head')[0].appendChild(jp); } else{ fcb(ktndata); } })()" class="bookmarklet">Airmaxify</a></p>
+
+	<p>To say happy birthday we've airmaxified the web for you. To enjoy the shoe-love, simply drag the Airmaxify button above to your bookmarks bar, visit any webpage (yup, any webpage), then hit the link in your bookmarks bar to Airmaxify everything.</p>
 </body>
 </html>
